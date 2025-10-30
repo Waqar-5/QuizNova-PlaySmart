@@ -72,11 +72,8 @@ See Your Results → Auto-calculated with pass/fail status
 
 Restart → Try again anytime with one click
 
-📸 Screenshots
-Start Page	Quiz in Progress	Result Summary
-🧾 Input your details	🧩 Answer questions under time pressure	🏁 View score, accuracy, and time summary
+<img width="1340" height="626" alt="Screenshot (163)" src="https://github.com/user-attachments/assets/28870797-62e7-4239-a956-d90490546100" />
 
-(You can add screenshots later for better visuals.)
 
 🧭 Future Improvements
 
@@ -95,6 +92,5 @@ Start Page	Quiz in Progress	Result Summary
 Developed by: Waqar Ali
 
 💡 Full-Stack Web Developer & AI Enthusiast
-📧 Email: wa5134810@gmail.com
 
 “Learning becomes powerful when it’s fun — that’s what this quiz is all about.” 🌈
