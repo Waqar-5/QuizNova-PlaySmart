@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0d47a1, #00796b, #fdd835);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fdd835;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+button {
+  background: linear-gradient(90deg, #43a047, #0d47a1);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin: 20px auto;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0d47a1, #43a047);
+  transform: scale(1.05);
+}
+
+.form-wrapper, .quiz-section, .result-section { display: none; }
+.form-wrapper.active, .quiz-section.active, .result-section.active { display: block; }
+
+ul { list-style: none; padding: 0; }
+li {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+li:hover:not(.disabled) {
+  background: #43a047;
+}
+
+li.correct { background: #43a047; }
+li.wrong { background: #f44336; }
+li.disabled { pointer-events: none; opacity: 0.6; }
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.progress {
+  width: 100%;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress-value {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #43a047, #fdd835);
+  border-radius: 10px;
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+}
+
+.pass { color: #43a047; }
+.fail { color: #f44336; }

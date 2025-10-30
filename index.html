@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Quiz App 🌟</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3830/3830345.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- ✅ SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- ✅ Link to External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- 🌟 Form Section -->
+    <div class="form-wrapper active">
+      <h1>🎯 Start Your Quiz</h1>
+      <input type="text" id="inp_name" placeholder="Your Name">
+      <input type="email" id="inp_email" placeholder="Your Email">
+      <input type="text" id="inp_roll" placeholder="Roll Number">
+      <input type="text" id="inp_inst" placeholder="Institute Name">
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- 🧠 Quiz Section -->
+    <div class="quiz-section">
+      <h1>🧠 Quiz Time!</h1>
+      <div class="stats">
+        <div>Q <span class="q-number">1</span>/<span class="total-questions">10</span></div>
+        <div>⏳ <span id="time-left">30</span>s</div>
+        <div>Total: <span id="total-time-left">300s</span></div>
+      </div>
+      <h2 id="question-text"></h2>
+      <ul id="options">
+        <li></li><li></li><li></li><li></li>
+      </ul>
+      <button id="next-btn" style="display:none;">Next ➜</button>
+    </div>
+
+    <!-- 🏁 Result Section -->
+    <div class="result-section">
+      <h1>🏁 Quiz Results</h1>
+      <p><b>Name:</b> <span id="res_name"></span></p>
+      <p><b>Email:</b> <span id="res_email"></span></p>
+      <p><b>Roll No:</b> <span id="res_roll"></span></p>
+      <p><b>Institute:</b> <span id="res_inst"></span></p>
+      <p><b>Total:</b> <span id="total"></span> Questions</p>
+      <p><b>Correct:</b> <span id="correct"></span></p>
+      <p><b>Wrong:</b> <span id="wrong"></span></p>
+      <p><b>Missed:</b> <span id="missed"></span></p>
+      <p><b>Percentage:</b> <span id="percentage"></span></p>
+      <h2 id="pass-fail"></h2>
+      <div class="progress"><div class="progress-value"></div></div>
+      <p><b>Time Taken:</b> <span id="time-taken"></span></p>
+      <p><b>Time Remaining:</b> <span id="time-remaining"></span></p>
+      <button id="restart-btn">Restart 🔁</button>
+    </div>
+  </div>
+
+  <!-- ✅ Link to External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
