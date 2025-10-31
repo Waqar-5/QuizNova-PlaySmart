@@ -18,6 +18,10 @@ Whether you’re testing your coding knowledge or just having fun, this quiz mak
 
 ---
 
+
+Live Demo: https://waqar-5.github.io/QuizNova-PlaySmart/
+
+
 ## ✨ Features
 
 ✅ **🎨 Modern UI Design** – Clean, glassmorphic design with glowing color gradients (Green, Blue, Yellow).  
